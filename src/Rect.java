@@ -26,7 +26,17 @@ public class Rect implements Shape {
 
    
     public void draw(Pen p) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        p.up();
+        p.move(xpos, ypos);
+        p.down();
+        p.setDirection(0);
+        p.move(width);
+        p.turn(90);
+        p.move(length);
+        p.turn(90);
+        p.move(width);
+        p.turn(90);
+        p.move(length);
     }
 
    
