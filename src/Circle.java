@@ -1,5 +1,4 @@
-
-import TurtleGraphics.Pen;
+import TurtleGraphics.*;
 
 public class Circle implements Shape {
 
@@ -25,7 +24,16 @@ public class Circle implements Shape {
 
     
     public void draw(Pen p) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        double side = 2.0*Math.PI*radius/120.0;
+        p.up();
+        p.move(xpos+radius, ypos-side/2.0);
+        p.setDirection(90);
+        p.down();
+        
+        for(int x=0; x<120; x++){
+            p.move(side);
+            p.turn(3);
+        }
     }
 
     

@@ -31,11 +31,11 @@ public class Rect implements Shape {
         p.down();
         p.setDirection(0);
         p.move(width);
-        p.turn(90);
+        p.turn(-90);
         p.move(length);
-        p.turn(90);
+        p.turn(-90);
         p.move(width);
-        p.turn(90);
+        p.turn(-90);
         p.move(length);
     }
 
