@@ -25,7 +25,7 @@ public class ShapeMaker {
            s1= new Rect(0,0,w,l);
        }
        else{
-           r= kr.readDouble ("ENter the radius of the circle: ");
+           r= kr.readDouble ("Enter the radius of the circle: ");
            s1= new Circle(0,0,r);
        }
        
