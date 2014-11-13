@@ -2,7 +2,7 @@ import TurtleGraphics.*;
 
 public class Circle implements Shape {
 
-     private double xpos, ypos, radius;
+    private double xpos, ypos, radius;
    
     public Circle(){
     xpos=0;

@@ -1,4 +1,3 @@
-
 import TurtleGraphics.Pen;
 
 public class Rect implements Shape {
